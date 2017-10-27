@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../images/bg1.jpg") no-repeat center center;
+    /*	background-attachment: fixed;*/
+    background-size: cover;
+}
+
+
+/*页头姓名*/
+
+#name {
+    margin-top: 0;
+}
+
+#name>div {
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+
+#name>div img {
+    width: 100%;
+}
+
+
+/*页头/导航*/
+
+#head-top {
+    margin-top: 30px;
+}
+
+#header img {
+    width: 100%;
+}
+
+#Inav {
+    position: relative;
+}
+
+#Inav>.navbar {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+#Inav .navbar-nav {
+    z-index: 100;
+    margin-left: 9.8%;
+    margin-top: -12%;
+}
+
+#Inav .navbar-nav>li {
+    width: 20%;
+}
+
+#Inav .navbar-nav>li:hover a,
+#Inav .navbar-nav>li.active a {
+    color: yellow;
+}
+
+#Inav .navbar-nav>li>a {
+    width: 90%;
+    padding-top: 70%;
+    font-size: 1.2em;
+    margin: 0 5%;
+    color: #fff;
+}
+
+#Inav .navbar-nav>li>a {
+    background-color: transparent;
+    background: url("../images/menu_bg.png") no-repeat center 0;
+    background-size: cover;
+}
+
+#Inav .navbar-nav>li>a span {
+    position: absolute;
+    top: 35%;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    padding: 0;
+    margin-top: -12%;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background: none;
+}
+
+.navbar-inverse .navbar-toggle p {
+    position: relative;
+    padding-top: 52%;
+    background: url("../images/menu_bg.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-toggle p span {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background: none;
+}
+
+.navbar-inverse .navbar-toggle:hover p span {
+    color: yellow;
+}
+
+#mycollapse {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+@media(min-width:768px) {
+    body {
+        font-size: 1.5em;
+    }
+    #Inav .navbar-nav>li>a span {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        text-align: center;
+    }
+    .nav>li>a {
+        padding: 0;
+    }
+    .shake {
+        transform-origin: 50% 0%;
+        -webkit-animation: rotate 0.8s linear 2;
+        -moz-animation: rotate 0.8s linear 2;
+        -o-animation: rotate 0.8s linear 2;
+        -ms-animation: rotate 0.8s linear 2;
+    }
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotateZ(0deg);
+        }
+        25% {
+            -webkit-transform: rotateZ(10deg);
+        }
+        75% {
+            -webkit-transform: rotateZ(-10deg);
+        }
+        100% {
+            -webkit-transform: rotateZ(0deg);
+        }
+    }
+    @-moz-keyframes rotate {
+        0% {
+            -webkit-transform: rotateZ(0deg);
+        }
+        25% {
+            -webkit-transform: rotateZ(10deg);
+        }
+        75% {
+            -webkit-transform: rotateZ(-10deg);
+        }
+        100% {
+            -webkit-transform: rotateZ(0deg);
+        }
+    }
+    @-o-keyframes rotate {
+        0% {
+            -webkit-transform: rotateZ(0deg);
+        }
+        25% {
+            -webkit-transform: rotateZ(10deg);
+        }
+        75% {
+            -webkit-transform: rotateZ(-10deg);
+        }
+        100% {
+            -webkit-transform: rotateZ(0deg);
+        }
+    }
+    @-ms-keyframes rotate {
+        0% {
+            -webkit-transform: rotateZ(0deg);
+        }
+        25% {
+            -webkit-transform: rotateZ(10deg);
+        }
+        75% {
+            -webkit-transform: rotateZ(-10deg);
+        }
+        100% {
+            -webkit-transform: rotateZ(0deg);
+        }
+    }
+}
+
+@media(max-width:1530px) {
+    body {
+        background: url("../images/bg1.jpg") no-repeat center 45%;
+        background-size: 100% 500%;
+    }
+}
+
+@media(max-width:998px) {
+    body {
+        background: url("../images/bg1.jpg") no-repeat center 40%;
+        background-size: 100% 800%;
+        font-size: 1.2em;
+    }
+    #Inav .navbar-nav>li>a span {
+        top: 30%;
+        font-family: "黑体";
+    }
+}
+
+@media(max-width:767px) {
+    body {
+        background: url("../images/bg1.jpg") no-repeat center 40%;
+        background-size: 100% 1000%;
+    }
+    .navbar-toggle {
+        float: none;
+    }
+    .navbar-header {
+        position: relative;
+    }
+    #Inav .navbar-nav {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #Inav .navbar-nav>li {
+        width: 100%;
+    }
+    #Inav .navbar-nav>li>a {
+        background: url("../images/menu_bg.png") no-repeat center center;
+        background-size: cover;
+        position: relative;
+        padding-top: 15px;
+        width: 30%;
+        margin-left: 35%;
+        text-align: center;
+    }
+    #Inav .navbar-nav>li>a span {
+        position: relative;
+        left: 0;
+    }
+    .col-xs-12 {
+        padding-right: 0;
+    }
+    .navbar {
+        min-height: 50px;
+        ;
+        margin-bottom: 20px;
+    }
+    #name>div {
+        width: 30%;
+        left: 35%;
+        top: 15px;
+    }
+}
+
+@media(max-width:570px) {
+    .navbar-inverse .navbar-toggle p span {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:374px) {
+    .navbar-inverse .navbar-toggle p {
+        padding-top: 65%;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 0.8em;
+    }
+    .navbar-inverse .navbar-toggle {
+        margin-top: -11.5%;
+    }
+    #mycollapse {
+        font-size: 0.8em;
+    }
+}
+
+
+/*主体内容*/
+
+.main-container {
+    overflow: hidden;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+#slider {
+    position: relative;
+    width: 500%;
+}
+
+.main-content {
+    position: relative;
+    width: 19%;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 0.5%;
+    padding: 0 0.5%;
+}
+
+.main-content:first-child p,
+.main-content:last-child p {
+    text-align: center;
+    line-height: 30px;
+}
+
+.main-content:nth-child(3) {
+    background: none;
+}
+
+.main-content>div>p {
+    font-family: "黑体";
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+/*作品展示页面*/
+
+.grid h2 {
+    font-size: 1.4em;
+}
+
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: #3085a3;
+    cursor: pointer;
+    border: 8px solid #fff;
+    box-shadow: 0 0 6px #000;
+    border-radius: 5px;
+}
+
+.grid figure img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 0.68em;
+}
+
+figure.effect-bubba {
+    background: #989898;
+}
+
+figure.effect-bubba img {
+    width: 100%;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+figure.effect-bubba h2 {
+    padding-top: 10%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+    color: #fff;
+}
+
+figure.effect-bubba p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
